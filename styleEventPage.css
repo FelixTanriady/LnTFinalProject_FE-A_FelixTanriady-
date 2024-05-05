@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-containers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0); 
+}
+
+.logo {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.nav-links {
+    margin-right: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 90px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    gap: 10px;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.nav-links i {
+    font-size: 1.2rem;
+}
+
+.nav-links a:hover {
+    color: #4db922;
+    text-decoration: none;
+    animation: berubah-ukuran 2s alternate;
+}
+
+/* Body */
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black !important;
+    padding-top: 5%; 
+}
+
+.main-container {
+    margin-top: 10px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+/* DAFTAR ACARA */
+
+
+.daftar-acara-container h2 {
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    background-color:#4db922;
+    border-radius: 15px;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    gap: 2px;
+    text-align: center;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.daftar-acara {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: row ;
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    width: 100%;;
+    margin: 0px auto;
+}
+
+.daftar-acara th {
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    background-color: azure;
+    opacity: 50%;
+}
+
+.daftar-acara td {
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    font-weight: 100px;
+    border-collapse: collapse;
+    background-color: azure;
+    opacity: 70%;
+}
+
+/* TIMELINE */
+.timeline-container h2 {
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    background-color:#4db922;
+    border-radius: 15px;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    gap: 2px;
+    text-align: center;
+    width: 100%;
+    margin: 20px auto;
+}
+.timeline-acara {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: row ;
+    border: 1px solid white;
+    border-collapse: collapse;
+    width: 100%;;
+    margin: 0 auto;
+}
+
+.timeline-acara th {
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    background-color: azure;
+    opacity: 50%;
+
+}
+
+.timeline-acara td {
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    padding:10px;
+    border: 1px solid rgb(0, 0, 0);
+    font-weight: 100px;
+    border-collapse: collapse;  
+    background-color: azure;
+    opacity: 70%;
+    width: 20%;
+}
+/* CAROUSEL */
+.carousel-container {
+    max-width: 75%;
+    max-height: 75%;
+}
+.carousel-container h2 {
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    background-color:#4db922;
+    border-radius: 15px;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    gap: 2px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.carousel-inner {
+    height: 500px;
+    width: 20px; 
+
+  }
+  
+  .carousel-item {
+    height: 100%;
+    object-fit: auto;
+  }
+
+  /* FORM */
+.registration-form-container {
+    margin-top: 20px;
+    width: 80%;
+    max-width: 600px;
+    background-color: #dccbcb;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    margin-bottom: 50px;
+}
+
+/* Style untuk h2 di luar form */
+.heading-outside {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    background-color:#4db922;
+    border-radius: 15px;
+    padding: 5px;
+    gap: 2px;
+    margin: 20px auto;
+    width: 75%;
+}
+
+
+.registration-form-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.registration-form-container .form-group {
+    margin-bottom: 20px;
+}
+
+.registration-form-container label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.registration-form-container input[type="email"],
+.registration-form-container input[type="text"],
+.registration-form-container input[type="tel"],
+.registration-form-container select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #c1acac;
+    border-radius: 5px;
+}
+
+.registration-form-container button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #4db922;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.registration-form-container button[type="submit"]:hover {
+    background-color: #3a911e;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-containers {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin: 10px 0;
+        gap: 10px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav-links a {
+        gap: 5px;
+    }
+
+    .nav-links i {
+        margin-top: 0;
+    }
+
+    .daftar-acara-container,
+    .carousel-container,
+    .timeline-container,
+    .registration-form-container {
+        width: 100%;
+        padding: 0 10px;
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+
+    .daftar-acara {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .daftar-acara th,
+    .daftar-acara td {
+        font-size: 16px;
+    }
+
+    .carousel-container {
+        max-width: 100%;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .carousel-item {
+        height: auto;
+    }
+
+    .timeline-acara th,
+    .timeline-acara td {
+        font-size: 16px;
+    }
+
+    .registration-form-container {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .nav-containers {
+        padding: 15px 40px;
+    }
+
+    .logo {
+        margin-left: 5%;
+    }
+
+    .nav-links {
+        margin-right: 5%;
+        gap: 30px;
+    }
+
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .daftar-acara-container {
+        max-width: 80%;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .daftar-acara {
+        width: 100%;
+    }
+
+    .daftar-acara th,
+    .daftar-acara td {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .carousel-container {
+        max-width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .timeline-container {
+        max-width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .timeline-acara {
+        width: 100%;
+    }
+
+    .timeline-acara th,
+    .timeline-acara td {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    /* Tata letak form registrasi */
+    .registration-form-container {
+        width: 80%;
+        max-width: 600px;
+        margin-bottom: 50px;
+    }
+
+    .registration-form-container h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .registration-form-container .form-group {
+        margin-bottom: 20px;
+    }
+
+    .registration-form-container label {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .registration-form-container input[type="email"],
+    .registration-form-container input[type="text"],
+    .registration-form-container input[type="tel"],
+    .registration-form-container select {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .registration-form-container button[type="submit"] {
+        padding: 12px;
+        font-size: 18px;
+    }
+}
+
+
+
